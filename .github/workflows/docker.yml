@@ -45,7 +45,7 @@ jobs:
         run: |
           helm upgrade --install backend \
             oci://ghcr.io/zeinagab/backend \
-            --version 0.1.0 \
+            
             --namespace helm-project \
             --create-namespace \
             -f helm-values/values.yaml \
