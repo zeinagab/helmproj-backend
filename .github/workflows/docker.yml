@@ -44,7 +44,7 @@ jobs:
       - name: Deploy with Helm
         run: |
           helm upgrade --install backend \
-            oci://ghcr.io/zeinagab/backend \
+            oci://ghcr.io/zeinagab/internship-backend-chart/backend-chart \
             
             --namespace helm-project \
             --create-namespace \
