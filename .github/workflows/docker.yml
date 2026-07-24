@@ -43,7 +43,7 @@ jobs:
           helm version
           helm list -A
 
-          kubectl get svc backend-service -n hel-project
+          kubectl get svc backend-service -n helm-project
 
   deploy:
     needs: build
