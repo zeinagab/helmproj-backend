@@ -63,6 +63,6 @@ jobs:
             oci://ghcr.io/zeinagab/internship-backend-chart/backend-chart \
             --namespace helm-project \
             --create-namespace \
-            -f helm-values/values.yaml \
+            -f backend-chart/values.yaml \
             --set image.repository=ghcr.io/${{ github.repository_owner }}/backend \
             --set image.tag=${{ github.sha }}
